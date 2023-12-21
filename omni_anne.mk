@@ -21,8 +21,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 # Inherit from anne device
 $(call inherit-product, device/huawei/anne/device.mk)
 
-# Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+# Inherit common product files.
+$(call inherit-product, vendor/pb/config/common.mk)
 
 PRODUCT_NAME := omni_anne
 PRODUCT_DEVICE := anne
